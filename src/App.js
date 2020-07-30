@@ -1,13 +1,9 @@
 import React from "react";
-import DialogPage from "./pages/DialogPage";
-
+import MyRcFieldForm from "./pages/MyRcFieldForm"
 export default function App(props) {
   return (
     <div>
-      {/* <ContextPage /> */}
-      {/* <AntdFormPage /> */}
-      {/* <MyRCFieldForm /> */}
-      <DialogPage />
+      <MyRcFieldForm></MyRcFieldForm>
     </div>
   );
 }
