@@ -1,15 +1,19 @@
 import React, {Component} from "react";
-import {FieldContext} from "../Context";
+import {FieldContext} from "../context";
 
 export default class extends Component {
     static contextType = FieldContext;
+
+    storeChange = () => {
+        this.forceUpdate();
+    }
 
     componentDidMount() {
         const {registerEntity} = this.context;
         this.cancelRegister = registerEntity(this);
     }
 
-    getApi = () => {
+    setControl = () => {
         const {name} = this.props;
         const {getFieldValue, setFieldValue} = this.context;
 
@@ -22,12 +26,6 @@ export default class extends Component {
     }
 
     render() {
-        return (
-            <div>
-                {
-                    React.cloneElement(this.props.children, this.getApi())
-                }
-            </div>
-        );
+        return  React.cloneElement(this.props.children, this.setControl());
     }
 }
