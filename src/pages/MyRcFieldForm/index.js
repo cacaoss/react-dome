@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from "react";
+import React, {useEffect} from "react";
 import {Field, Form, Input} from "../../components/MyRcFieldForm";
 import {Button} from "antd";
 /*
@@ -64,7 +64,7 @@ export default function () {
 
     useEffect(() => {
         form.setFieldValue({username: "ZZH"})
-    }, [])
+    })
     return (
         <div>
             <h1>MyRcFieldForm Page</h1>
