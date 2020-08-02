@@ -4,9 +4,9 @@ import MyRcForm from "./pages/MyRcForm";
 import MyRcFieldForm from "./pages/MyRcFieldForm"
 import ContextPage from "./pages/ContextPage"
 import ReduxPage from "./pages/ReduxPage"
-
-
 import ReactReduxPage from "./pages/ReactReduxPage"
+import ReactHooksPage from "./pages/ReactHooksPage"
+import RouterPage from "./pages/RouterPage"
 
 export default function App(props) {
     return (
@@ -16,8 +16,9 @@ export default function App(props) {
             {/*<MyRcFieldForm></MyRcFieldForm>*/}
             {/*<ContextPage></ContextPage>*/}
             {/*<ReduxPage></ReduxPage>*/}
-
-            <ReactReduxPage></ReactReduxPage>
+            {/*<ReactReduxPage></ReactReduxPage>*/}
+            {/*<ReactHooksPage></ReactHooksPage>*/}
+            <RouterPage></RouterPage>
         </div>
     );
 }
