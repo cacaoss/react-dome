@@ -7,6 +7,7 @@ import ReduxPage from "./pages/ReduxPage"
 import ReactReduxPage from "./pages/ReactReduxPage"
 import ReactHooksPage from "./pages/ReactHooksPage"
 import RouterPage from "./pages/RouterPage"
+import StatePage from "./pages/StatePage";
 import TestPage from "./pages/TestPage";
 
 export default function App(props) {
@@ -20,7 +21,7 @@ export default function App(props) {
             {/*<ReactReduxPage></ReactReduxPage>*/}
             {/*<ReactHooksPage></ReactHooksPage>*/}
             {/*<RouterPage></RouterPage>*/}
-
+            {/*<StatePage></StatePage>*/}
             <TestPage></TestPage>
         </div>
     );

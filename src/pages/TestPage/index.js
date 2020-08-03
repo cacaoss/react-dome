@@ -1,16 +1,15 @@
 import React, {Component} from "react";
 
-export default function TestPage(props) {
-    const arr = [fun1, fun2, fun3, fun4]
-    const result = reduceFunctionTest(arr)("omg");
+export default class TestPage extends Component {
 
-    return (
-        <div>
-            <h1>Test Page</h1>
-            <hr/>
-            <p>{result}</p>
-        </div>
-    );
+    render() {
+        return (
+            <div>
+                <h1>Test Page</h1>
+                <hr/>
+            </div>
+        );
+    }
 }
 
 function fun1(param) {
@@ -40,3 +39,6 @@ function reduceFunctionTest(arr) {
 
     return result;
 }
+
+const arr = [fun1, fun2, fun3, fun4]
+const result = reduceFunctionTest(arr)("omg");
