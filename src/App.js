@@ -11,14 +11,14 @@ import RouterPage from "./pages/RouterPage"
 export default function App(props) {
     return (
         <div>
-            {/*<AntdPage></AntdPage>*/}
+            <AntdPage></AntdPage>
             {/*<MyRcForm></MyRcForm>*/}
             {/*<MyRcFieldForm></MyRcFieldForm>*/}
             {/*<ContextPage></ContextPage>*/}
             {/*<ReduxPage></ReduxPage>*/}
             {/*<ReactReduxPage></ReactReduxPage>*/}
             {/*<ReactHooksPage></ReactHooksPage>*/}
-            <RouterPage></RouterPage>
+            {/*<RouterPage></RouterPage>*/}
         </div>
     );
 }

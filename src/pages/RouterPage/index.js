@@ -11,10 +11,10 @@ import _404Page from "./page/_404Page";
 import {useHook} from "./hook/useHook";
 
 function Product() {
-    //const {params} = useHook();
+    const {params} = useHook();
     return (
         <div>
-            {/*<h2>{params.id}</h2>*/}
+            <h2>{params.id}</h2>
             Product
         </div>
     );
@@ -37,7 +37,7 @@ export default function RouterPage(props) {
                     <Route path={"/user"} component={UserPage}></Route>
                     <Route path={"/login"} component={LoginPage}></Route>
                     {/*<Route path={"/welcome"} component={WelcomePage}></Route>*/}
-                    {/*<Route path={"/welcome"} render={() => <Redirect to={"/login"}/>}></Route>*/}
+                    <Route path={"/welcome"} render={() => <Redirect to={"/login"}/>}></Route>
 
                     <Route path={"/product/:id"} component={Product}></Route>
                     <Route component={_404Page}></Route>

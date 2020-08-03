@@ -1,10 +1,8 @@
 import React from "react";
-import {Button} from "antd";
-import {Redirect} from "react-router-dom"
 import {useHook} from "../hook/useHook";
 
 export default function HomePage() {
-    //useHook();
+    useHook();
 
     return (
         <div>

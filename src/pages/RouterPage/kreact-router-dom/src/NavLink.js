@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import RouterContext from "./context/RouterContext";
+import RouterContext from "../context/RouterContext";
 
 export default class NavLink extends Component {
     static contextType = RouterContext;

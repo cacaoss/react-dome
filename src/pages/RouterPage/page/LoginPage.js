@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {Button, Form, Input} from "antd";
-import {Prompt} from "react-router-dom"
+// import {Prompt} from "react-router-dom"
+import {Prompt} from "../kreact-router-dom"
 import {useHook} from "../hook/useHook";
 
-
 export default function LoginPage() {
-    //useHook();
+    useHook();
     const [finish, setFinish] = useState(true)
 
     return (
@@ -26,10 +26,10 @@ export default function LoginPage() {
                     <Button type={"primary"} htmlType={"submit"}>提交</Button>
                 </Form.Item>
             </Form>
-            {/*<Prompt*/}
-            {/*    when={finish}*/}
-            {/*    message="Are you sure you want to leave?"*/}
-            {/*/>*/}
+            <Prompt
+                when={finish}
+                message="Are you sure you want to leave?"
+            />
         </div>
     );
 }
