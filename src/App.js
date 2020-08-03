@@ -7,11 +7,12 @@ import ReduxPage from "./pages/ReduxPage"
 import ReactReduxPage from "./pages/ReactReduxPage"
 import ReactHooksPage from "./pages/ReactHooksPage"
 import RouterPage from "./pages/RouterPage"
+import TestPage from "./pages/TestPage";
 
 export default function App(props) {
     return (
         <div>
-            <AntdPage></AntdPage>
+            {/*<AntdPage></AntdPage>*/}
             {/*<MyRcForm></MyRcForm>*/}
             {/*<MyRcFieldForm></MyRcFieldForm>*/}
             {/*<ContextPage></ContextPage>*/}
@@ -19,6 +20,8 @@ export default function App(props) {
             {/*<ReactReduxPage></ReactReduxPage>*/}
             {/*<ReactHooksPage></ReactHooksPage>*/}
             {/*<RouterPage></RouterPage>*/}
+
+            <TestPage></TestPage>
         </div>
     );
 }
