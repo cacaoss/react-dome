@@ -19,10 +19,10 @@ export default function App(props) {
             {/*<ContextPage></ContextPage>*/}
             {/*<ReduxPage></ReduxPage>*/}
             {/*<ReactReduxPage></ReactReduxPage>*/}
-            {/*<ReactHooksPage></ReactHooksPage>*/}
+            <ReactHooksPage></ReactHooksPage>
             {/*<RouterPage></RouterPage>*/}
             {/*<StatePage></StatePage>*/}
-            <TestPage></TestPage>
+            {/*<TestPage></TestPage>*/}
         </div>
     );
 }

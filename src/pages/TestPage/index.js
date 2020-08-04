@@ -1,15 +1,14 @@
-import React, {Component} from "react";
+import React, {Component, PureComponent, useCallback, useEffect, useMemo, useState} from "react";
 
-export default class TestPage extends Component {
+export default function TestPage() {
+    return (
+        <div>
+            <h1>Test Page</h1>
+            <hr/>
 
-    render() {
-        return (
-            <div>
-                <h1>Test Page</h1>
-                <hr/>
-            </div>
-        );
-    }
+
+        </div>
+    );
 }
 
 function fun1(param) {
