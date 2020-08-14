@@ -9,6 +9,9 @@ import ReactHooksPage from "./pages/ReactHooksPage"
 import RouterPage from "./pages/RouterPage"
 import StatePage from "./pages/StatePage";
 import TestPage from "./pages/TestPage";
+import HomeWorkPage from "./pages/HomeWorkPage";
+import UseCallbackPage from "./pages/UseCallbackPage";
+import UseMemoPage from "./pages/UseMemoPage";
 
 export default function App(props) {
     return (
@@ -19,10 +22,14 @@ export default function App(props) {
             {/*<ContextPage></ContextPage>*/}
             {/*<ReduxPage></ReduxPage>*/}
             {/*<ReactReduxPage></ReactReduxPage>*/}
-            <ReactHooksPage></ReactHooksPage>
+            {/*<ReactHooksPage></ReactHooksPage>*/}
             {/*<RouterPage></RouterPage>*/}
             {/*<StatePage></StatePage>*/}
             {/*<TestPage></TestPage>*/}
+            {/*<HomeWorkPage/>*/}
+            <UseMemoPage/>
+            <UseCallbackPage/>
+
         </div>
     );
 }
