@@ -27,8 +27,8 @@ export default function App(props) {
             {/*<StatePage></StatePage>*/}
             {/*<TestPage></TestPage>*/}
             {/*<HomeWorkPage/>*/}
-            <UseMemoPage/>
-            <UseCallbackPage/>
+            {/*<UseMemoPage/>*/}
+            {/*<UseCallbackPage/>*/}
 
         </div>
     );
