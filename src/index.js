@@ -1,27 +1,26 @@
-import React from "./kreact"
-import ReactDom from "./kreact-dom"
-import "./index.css"
+import React from './kreact';
+import ReactDom from './kreact-dom';
+import './index.css';
 
-import KReactClassPage from "./pages/KReactClassPage";
-import KReactFunctionPage from "./pages/KReactFunctionPage";
+import KReactClassPage from './pages/KReactClassPage';
+import KReactFunctionPage from './pages/KReactFunctionPage';
 
 const jsx = (
-    <div className={"border"}>
+    <div className={'border'}>
         <p>全栈</p>
         <a href="https://www.kaikeba.com">开课吧</a>
-        {
-            ["课1", "课2", "课3",].map(item => (<p>{item}</p>))
-        }
+        {['课1', '课2', '课3'].map(item => (
+            <p>{item}</p>
+        ))}
         <>
             <p>H1</p>
             <p>H2</p>
+            <p>H3</p>
+            <p>乘风破浪</p>
         </>
-        <KReactClassPage name={"Class 传值测试"}/>
-        <KReactFunctionPage name={"Function 传值测试"}/>
+        <KReactClassPage name={'Class 传值测试'} />
+        <KReactFunctionPage name={'Function 传值测试'} />
     </div>
 );
 
-ReactDom.render(
-    jsx,
-    document.getElementById("root")
-);
+ReactDom.render(jsx, document.getElementById('root'));
